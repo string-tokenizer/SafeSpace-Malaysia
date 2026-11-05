@@ -1,0 +1,15 @@
+<% content_for :title, "Contact" %>
+<article>
+  <div class="col-lg-9 mx-auto">
+    <p class="kicker">Get in touch</p>
+    <h1>Contact</h1>
+    <p class="lead">This site does not collect messages or personal details. To reach someone who can help, use the options below.</p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
+    <%= info_card "Nearest police station" do %><p class="text-muted mb-0">Search for your local station on the PDRM website or ask at any station to lodge a report.</p><% end %>
+    <%= info_card "Social Welfare Department" do %><p class="text-muted mb-0">Visit your district JKM office or call Talian Kasih at <a href="tel:15999">15999</a>.</p><% end %>
+    <%= info_card "Women's Aid Organisation" do %><p class="text-muted mb-0">Phone <a href="tel:+60330008858">03-3000 8858</a> or WhatsApp <a href="https://wa.me/60189888058">018-988 8058</a>.</p><% end %>
+    <%= info_card "About this website" do %><p class="text-muted mb-0">Student project created for an assignment on domestic and gender-based violence awareness in Malaysia.</p><% end %>
+  </div>
+</article>
+

@@ -1,0 +1,27 @@
+<% content_for :title, "Home" %>
+<section class="text-center py-4 mb-4">
+  <p class="kicker">You are not alone</p>
+  <h1 class="display-4">Violence at home is never <em>your fault</em>.</h1>
+  <p class="lead mx-auto my-4" style="max-width:640px">Safe Space Malaysia explains what domestic and gender-based violence is, what the law says, who can act, and where to get help right now.</p>
+  <%= link_to "Get help now", hotline_path, class: "btn btn-rose btn-lg rounded-pill px-4 m-1" %>
+  <%= link_to "Learn more", what_is_path, class: "btn btn-outline-rose btn-lg rounded-pill px-4 m-1" %>
+</section>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  <%= info_card "What Is" do %>
+    <p class="text-muted">Understand the forms of abuse, including the ones that leave no bruises.</p>
+    <%= link_to "Read →", what_is_path, class: "stretched-link" %>
+  <% end %>
+  <%= info_card "Law Enforcement" do %>
+    <p class="text-muted">Your rights under the Domestic Violence Act 1994 and related laws.</p>
+    <%= link_to "Read →", law_enforcement_path, class: "stretched-link" %>
+  <% end %>
+  <%= info_card "Enforcer" do %>
+    <p class="text-muted">Police, social welfare officers, hospitals and courts: who does what.</p>
+    <%= link_to "Read →", enforcer_path, class: "stretched-link" %>
+  <% end %>
+  <%= info_card "Hotline" do %>
+    <p class="text-muted">Confidential helplines you can call or message.</p>
+    <%= link_to "Read →", hotline_path, class: "stretched-link" %>
+  <% end %>
+</div>

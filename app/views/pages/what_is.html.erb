@@ -1,0 +1,28 @@
+<% content_for :title, "What Is" %>
+<article class="col-lg-9 mx-auto">
+  <p class="kicker">Understanding</p>
+  <h1>What is domestic &amp; gender-based violence?</h1>
+  <p class="lead">Domestic violence is a pattern of behaviour used to gain or keep power and control over a partner or family member. Gender-based violence (GBV) is harm directed at a person because of their gender, and can happen at home, at work, in public or online.</p>
+
+  <h2>Forms of abuse</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <%= info_card "Physical" do %><p class="text-muted mb-0">Hitting, slapping, choking, pushing, or using objects to hurt.</p><% end %>
+    <%= info_card "Emotional & psychological" do %><p class="text-muted mb-0">Insults, threats, humiliation, isolation, constant monitoring.</p><% end %>
+    <%= info_card "Sexual" do %><p class="text-muted mb-0">Any sexual act without free consent, including within marriage.</p><% end %>
+    <%= info_card "Economic" do %><p class="text-muted mb-0">Controlling money, preventing work, withholding support.</p><% end %>
+    <%= info_card "Digital" do %><p class="text-muted mb-0">Stalking, tracking phones, sharing private images, online harassment.</p><% end %>
+  </div>
+
+  <h2>Warning signs</h2>
+  <ul class="list-group list-group-flush mb-4">
+    <li class="list-group-item bg-transparent">A partner who is jealous, controlling or checks your phone and movements.</li>
+    <li class="list-group-item bg-transparent">Being cut off from family, friends or work.</li>
+    <li class="list-group-item bg-transparent">Fear of your partner's reactions, or apologising constantly to keep the peace.</li>
+    <li class="list-group-item bg-transparent">Threats to hurt you, your children, pets, or themselves.</li>
+  </ul>
+
+  <blockquote class="blockquote-soft">Abuse often escalates over time. Seeking help early is a sign of strength, not failure.</blockquote>
+
+  <h2>If you are supporting someone</h2>
+  <p>Listen without judging, believe them, avoid pressuring them to leave, and share the <%= link_to "hotline numbers", hotline_path %>. They know their situation best.</p>
+</article>

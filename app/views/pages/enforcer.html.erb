@@ -1,0 +1,17 @@
+<% content_for :title, "Enforcer" %>
+<article>
+  <div class="col-lg-9 mx-auto">
+    <p class="kicker">Who can help</p>
+    <h1>Enforcers &amp; responding agencies</h1>
+    <p class="lead">Different agencies play different roles. You do not need to know which one to approach first.</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+    <%= info_card "Royal Malaysia Police (PDRM)" do %><p class="text-muted mb-0">Receives reports, investigates, arrests offenders and helps enforce Protection Orders. The D11 Division deals with sexual, domestic and child abuse investigations.</p><% end %>
+    <%= info_card "Department of Social Welfare (JKM)" do %><p class="text-muted mb-0">Protection Officers can issue Emergency Protection Orders, arrange shelter and provide counselling.</p><% end %>
+    <%= info_card "Hospitals (OSCC)" do %><p class="text-muted mb-0">One Stop Crisis Centres provide medical treatment, documentation of injuries, counselling and referrals.</p><% end %>
+    <%= info_card "Courts" do %><p class="text-muted mb-0">Magistrates' Courts issue Protection Orders. Syariah Courts handle Islamic family law matters.</p><% end %>
+    <%= info_card "Legal Aid Department" do %><p class="text-muted mb-0">Offers legal advice and representation for eligible persons.</p><% end %>
+    <%= info_card "Women's NGOs" do %><p class="text-muted mb-0">Organisations such as WAO and AWAM provide counselling, shelter referrals and court accompaniment.</p><% end %>
+  </div>
+</article>
